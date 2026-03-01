@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login_screen.dart';
 
 class CoursesScreen extends StatelessWidget {
   const CoursesScreen({super.key});
@@ -20,8 +21,8 @@ class CoursesScreen extends StatelessWidget {
         actions: [
           // 2. LOGOUT ACTION: Navigates back to the previous screen (Login).
           IconButton(
-            onPressed: () => Navigator.pop(context),
-            icon: const Icon(Icons.logout),
+            onPressed: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const LoginScreen())),
+            icon: const Icon(Icons.login),
           ),
         ],
       ),
