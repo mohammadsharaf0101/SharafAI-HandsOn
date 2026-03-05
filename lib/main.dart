@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
         primaryColor: Colors.blueAccent,
       ),
-    home: const LoginScreen(),sdxxc!  q227      
+    home: const LoginScreen(),    
     );
   }
+
 }
